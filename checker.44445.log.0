@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "PythonContracts/addition.py", line 26, in <module>
+    contract.run()
+  File "/home/aaron/IdeaProjects/Chainspace_contracts/PythonContracts/contract.py", line 62, in run
+    cli()
+  File "/home/aaron/project/python2_env/env/local/lib/python2.7/site-packages/click/core.py", line 764, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/aaron/project/python2_env/env/local/lib/python2.7/site-packages/click/core.py", line 717, in main
+    rv = self.invoke(ctx)
+  File "/home/aaron/project/python2_env/env/local/lib/python2.7/site-packages/click/core.py", line 1137, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/aaron/project/python2_env/env/local/lib/python2.7/site-packages/click/core.py", line 956, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/aaron/project/python2_env/env/local/lib/python2.7/site-packages/click/core.py", line 555, in invoke
+    return callback(*args, **kwargs)
+  File "/home/aaron/IdeaProjects/Chainspace_contracts/PythonContracts/contract.py", line 60, in checker
+    self.run_checker_service(port)
+  File "/home/aaron/IdeaProjects/Chainspace_contracts/PythonContracts/contract.py", line 67, in run_checker_service
+    self.flask_app.run(port=port)
+  File "/home/aaron/project/python2_env/env/local/lib/python2.7/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/home/aaron/project/python2_env/env/local/lib/python2.7/site-packages/werkzeug/serving.py", line 1009, in run_simple
+    inner()
+  File "/home/aaron/project/python2_env/env/local/lib/python2.7/site-packages/werkzeug/serving.py", line 962, in inner
+    fd=fd,
+  File "/home/aaron/project/python2_env/env/local/lib/python2.7/site-packages/werkzeug/serving.py", line 805, in make_server
+    host, port, app, request_handler, passthrough_errors, ssl_context, fd=fd
+  File "/home/aaron/project/python2_env/env/local/lib/python2.7/site-packages/werkzeug/serving.py", line 698, in __init__
+    HTTPServer.__init__(self, server_address, handler)
+  File "/usr/lib/python2.7/SocketServer.py", line 420, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib/python2.7/SocketServer.py", line 434, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
